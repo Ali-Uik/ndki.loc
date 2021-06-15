@@ -1,14 +1,14 @@
 <?php
 
+
 namespace app\controllers;
 use app\models\News;
-use yii;
+use Yii;
 
-class NewsController extends AppController{
-
-	public function actionIndex() {
-		return $this->render('index');
-
-	}
-
+class NewsController extends AppController
+{
+    public function actionIndex(){
+        $articles=News::find()->all();
+        return $this->render('index', compact('articles'));
+    }
 }

@@ -93,18 +93,20 @@ $this->title = 'My Yii Application';
                         <div class="title__border right"></div>
                         <a href="#" class="btn btn-primary btn-sm text-nowrap px-7">Все новости</a>
                     </div>
+    <?if(!empty($articles)): ?>
                     <div class="row row-min">
+        <?php foreach ($articles as $article):?>
                         <div class="col-sm-6 col-row-min">
                             <div class="news">
                                 <a href="#" class="news__image">
-                                    <img src="/images/news/1.jpg" alt="">
+                                    <img src="<?= $article->image?>" alt="">
                                 </a>
                                 <div class="news__caption">
-                                    <a href="#">Совместная образовательная программа Навоийского государственного горного института</a>
+                                    <a href="#"><?= $article->description?></a>
                                     <div class="news__caption-bottom">
                                         <div class="news__info">
                                             <div class="news__info-item">
-                                                <span class="icon icon-calendar"></span>22 апреля
+                                                <span class="icon icon-calendar"></span><?= $article->adding_date?>
                                             </div>
                                         </div>
                                         <a href="#">Подробнее <span class="icon icon-arrow-right"></span></a>
@@ -112,61 +114,9 @@ $this->title = 'My Yii Application';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-row-min">
-                            <div class="news">
-                                <a href="#" class="news__image">
-                                    <img src="/images/news/2.jpg" alt="">
-                                </a>
-                                <div class="news__caption">
-                                    <a href="#">Постановление Президента Республики Узбекистан PQ-4749</a>
-                                    <div class="news__caption-bottom">
-                                        <div class="news__info">
-                                            <div class="news__info-item">
-                                                <span class="icon icon-calendar"></span>21 апреля
-                                            </div>
-                                        </div>
-                                        <a href="#">Подробнее <span class="icon icon-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-row-min">
-                            <div class="news">
-                                <a href="#" class="news__image">
-                                    <img src="/images/news/3.jpg" alt="">
-                                </a>
-                                <div class="news__caption">
-                                    <a href="#">Электронное учебное пособие авторов НГГИ заняло призовое</a>
-                                    <div class="news__caption-bottom">
-                                        <div class="news__info">
-                                            <div class="news__info-item">
-                                                <span class="icon icon-calendar"></span>18 апреля
-                                            </div>
-                                        </div>
-                                        <a href="#">Подробнее <span class="icon icon-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-row-min">
-                            <div class="news">
-                                <a href="#" class="news__image">
-                                    <img src="/images/news/4.jpg" alt="">
-                                </a>
-                                <div class="news__caption">
-                                    <a href="#">Молодой ученый НГГИ стала Женщиной года!</a>
-                                    <div class="news__caption-bottom">
-                                        <div class="news__info">
-                                            <div class="news__info-item">
-                                                <span class="icon icon-calendar"></span>10 апреля
-                                            </div>
-                                        </div>
-                                        <a href="#">Подробнее <span class="icon icon-arrow-right"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <?php endforeach;?>
                     </div>
+    <?php endif;?>
                 </div>
                 <div class="col-lg-5">
                     <div class="news-list box-shadow-1 bg-white p-4">
