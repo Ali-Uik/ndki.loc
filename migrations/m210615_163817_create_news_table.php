@@ -18,7 +18,6 @@ class m210615_163817_create_news_table extends Migration
             'description'=>$this->text(),
             'content'=>$this->text(),
             'adding_date'=>$this->date(),
-            'image'=>$this->string(),
 
         ]);
     }
