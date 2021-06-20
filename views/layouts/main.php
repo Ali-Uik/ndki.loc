@@ -24,6 +24,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+<?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
 <!-- Header -->
 <header class="header">
     <div class="header__top">
@@ -235,6 +236,7 @@ AppAsset::register($this);
         </div>
     </div>
     <div class="header__bottom">
+
         <div class="container">
             <div class="menu">
                 <nav>
