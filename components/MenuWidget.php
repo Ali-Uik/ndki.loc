@@ -25,7 +25,7 @@ use app\models\Category;
 	        $this->tree = $this->getTree();
 	        $this->menuHtml = $this->getMenuHtml($this->tree);
 	        debug($this->tree);
-	        debug($this->data);
+//	        debug($this->data);
 			return $this->tpl;
 		}
 		protected function getTree(){
@@ -34,7 +34,7 @@ use app\models\Category;
 	            if (!$node['parent_id'])
 	                $tree['id'] = &$node;
 	            else
-	                $this->data[$node['parent_id']]['childs'][$node['id']] = &$node;
+	                $this->data[$node['parent_id']]['child'][$node['id']] = &$node;
             }
 	        return $tree;
         }
