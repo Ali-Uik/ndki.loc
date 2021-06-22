@@ -2,9 +2,9 @@
     <a href="">
         <?= $category['description'] ?>
     </a>
-    <?php if (isset($category['childs'])):?>
+    <?php if(isset($category['child'])): ?>
         <ul>
-            <?= $this->getMenuHtml($category['childs'])?>
+            <?= $this->getMenuHtml($category['child'])?>
         </ul>
     <?php endif;?>
 </li>

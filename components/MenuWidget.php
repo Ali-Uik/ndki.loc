@@ -24,15 +24,16 @@ use app\models\Category;
 	        $this->data = Category::find()->indexBy('id')->asArray()->all();
 	        $this->tree = $this->getTree();
 	        $this->menuHtml = $this->getMenuHtml($this->tree);
-	        debug($this->tree);
+//	        debug($this->tree);
 //	        debug($this->data);
-			return $this->tpl;
+			return $this->menuHtml;
+//          return $this->tpl;
 		}
 		protected function getTree(){
 	        $tree = [];
 	        foreach ($this->data as $id=>&$node){
 	            if (!$node['parent_id'])
-	                $tree['id'] = &$node;
+	                $tree[$id] = &$node;
 	            else
 	                $this->data[$node['parent_id']]['child'][$node['id']] = &$node;
             }
