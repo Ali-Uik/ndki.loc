@@ -24,7 +24,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
+
 <!-- Header -->
 <header class="header">
     <div class="header__top">
@@ -241,72 +241,63 @@ AppAsset::register($this);
             <div class="menu">
                 <nav>
                     <ul>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Институт</a>
-                            <ul>
-                                <li><a href="#">Приветствие ректора</a></li>
-                                <li><a href="#">История института</a></li>
-                                <li><a href="#">Устав института</a></li>
-                                <li><a href="#">Нормативные документы</a></li>
-                                <li><a href="#">Общая информация</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown active">
-                            <a href="#">Структура</a>
-                            <ul>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li class="active"><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Деятельность</a>
-                            <ul>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Студентам</a>
-                            <ul>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Абитуриент</a>
-                            <ul>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Новости</a>
-                            <ul>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Объявление</a></li>
-                                <li><a href="#">Тендеры</a></li>
-                                <li><a href="#">Фотогалерея</a></li>
-                                <li><a href="#">Видеогалерея</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-dropdown">
-                            <a href="#">Интерактивные услуги</a>
-                            <ul>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                                <li><a href="#">Menu dropdown item</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Контакты</a></li>
+                        <?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
+<!--                        <li class="menu-item-has-dropdown active">-->
+<!--                            <a href="#">Структура</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li class="active"><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="menu-item-has-dropdown">-->
+<!--                            <a href="#">Деятельность</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="menu-item-has-dropdown">-->
+<!--                            <a href="#">Студентам</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="menu-item-has-dropdown">-->
+<!--                            <a href="#">Абитуриент</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="menu-item-has-dropdown">-->
+<!--                            <a href="#">Новости</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Новости</a></li>-->
+<!--                                <li><a href="#">Объявление</a></li>-->
+<!--                                <li><a href="#">Тендеры</a></li>-->
+<!--                                <li><a href="#">Фотогалерея</a></li>-->
+<!--                                <li><a href="#">Видеогалерея</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li class="menu-item-has-dropdown">-->
+<!--                            <a href="#">Интерактивные услуги</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                                <li><a href="#">Menu dropdown item</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Контакты</a></li>-->
                     </ul>
                 </nav>
             </div>
