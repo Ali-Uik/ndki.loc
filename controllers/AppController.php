@@ -5,7 +5,6 @@ namespace app\controllers;
 use yii\web\Controller;
 
 
-class AppController extends Controller
-{
+class AppController extends Controller{
 
 }
