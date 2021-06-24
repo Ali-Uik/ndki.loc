@@ -25,7 +25,7 @@ $this->title = 'My Yii Application';
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="item">
                                 <div class="slider-main__item" style="background-image: url('images/slider/slider-1.jpg');">
                                     <div class="overlay"></div>
@@ -93,20 +93,20 @@ $this->title = 'My Yii Application';
                         <div class="title__border right"></div>
                         <a href="#" class="btn btn-primary btn-sm text-nowrap px-7">Все новости</a>
                     </div>
-    <?if(!empty($articles)): ?>
+                    <?php if(!empty($news)):?>
                     <div class="row row-min">
-                        <?php foreach ($articles as $article):?>
+                        <?php foreach ($news as $new):?>
                         <div class="col-sm-6 col-row-min">
                             <div class="news">
                                 <a href="#" class="news__image">
-                                    <img src="<?= $article->image?>" alt="">
+                                    <img src="<?= $new->images?>" alt="">
                                 </a>
                                 <div class="news__caption">
-                                    <a href="#"><?= $article->description?></a>
+                                    <a href="#"><?= $new->description?></a>
                                     <div class="news__caption-bottom">
                                         <div class="news__info">
                                             <div class="news__info-item">
-                                                <span class="icon icon-calendar"></span><?= $article->adding_date?>
+                                                <span class="icon icon-calendar"></span><?= $new->adding_date?>
                                             </div>
                                         </div>
                                         <a href="#">Подробнее <span class="icon icon-arrow-right"></span></a>
@@ -114,9 +114,10 @@ $this->title = 'My Yii Application';
                                 </div>
                             </div>
                         </div>
-                        <?php endforeach;?>
+                         <?php endforeach;?>
+
                     </div>
-    <?php endif;?>
+                    <?php endif;?>
                 </div>
                 <div class="col-lg-5">
                     <div class="news-list box-shadow-1 bg-white p-4">
@@ -191,7 +192,7 @@ $this->title = 'My Yii Application';
             </div>
         </div>
     </section>
-    
+
     <!-- Section Video Gallery -->
     <section class="section section-videos">
         <div class="container">

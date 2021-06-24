@@ -11,4 +11,9 @@ class NewsController extends AppController
         $articles=News::find()->all();
         return $this->render('index', compact('articles'));
     }
+
+//    public function ActionView($id){
+//        $id = Yii::$app->request->(id);
+//        debug($id);
+//    }
 }

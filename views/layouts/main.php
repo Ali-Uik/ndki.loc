@@ -297,7 +297,7 @@ AppAsset::register($this);
 <!--                                <li><a href="#">Menu dropdown item</a></li>-->
 <!--                            </ul>-->
 <!--                        </li>-->
-<!--                        <li><a href="#">Контакты</a></li>-->
+                       <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
