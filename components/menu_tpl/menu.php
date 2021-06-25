@@ -1,4 +1,3 @@
-
 <li class="menu-item-has-dropdown">
     <a href="<?= \yii\helpers\Url::to(['category/view','id'=>$category['id'] ]);?>">
         <?= $category['description'] ?>
