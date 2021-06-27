@@ -1,5 +1,5 @@
 <li class="menu-item-has-dropdown">
-    <a href="<?= \yii\helpers\Url::to(['category/view','id'=>$category['id'] ]);?>">
+    <a href="<?= \yii\helpers\Url::to(['category/view','id'=>$category['id'] ])?>">
         <?= $category['description'] ?>
     </a>
     <?php if(isset($category['child'])): ?>
