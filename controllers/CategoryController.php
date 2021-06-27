@@ -19,6 +19,7 @@ class CategoryController extends AppController
         $id = Yii::$app->request->get('id');
 //        debug($id);
         $articles = Article::find()->where(['cat_id' => $id] ) -> all();
+//        debug($articles);
         return $this->render('view', compact('articles'));
     }
 }
