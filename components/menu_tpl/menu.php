@@ -4,7 +4,7 @@
     </a>
     <?php if(isset($category['child'])): ?>
     <ul>
-        <li><a href="#"><?= $this->getMenuHtml($category['child'])?></a></li>
+        <a href="#"><?= $this->getMenuHtml($category['child'])?></a>
     </ul>
     <?php endif;?>
 </li>
