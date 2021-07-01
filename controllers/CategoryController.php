@@ -10,7 +10,7 @@ use Yii;
 class CategoryController extends AppController
 {
     public function actionIndex(){
-        $news = Article::find()->where(['cat_id'=>'16'])->limit(4)->all();
+        $news = Article::find()->where(['cat_id'=>'11'])->limit(4)->all();
 //        debug($news);
         return $this->render('index', compact('news'));
     }
