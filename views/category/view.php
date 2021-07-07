@@ -20,7 +20,7 @@ $this->title = 'My Yii Application';
 <!--                    <li>Название страницы</li>-->
 <!--                </ul>-->
 <!--            </div>-->
-<!--            <h2>--><?//= $article->title ;?><!--</h2>-->
+
 <!--        </div>-->
 <!--    </section>-->
 
