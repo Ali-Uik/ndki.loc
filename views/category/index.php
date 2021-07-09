@@ -68,15 +68,16 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col order-lg-1 col-left">
                     <div class="category-menu box-shadow-1">
-                        <ul>
-                            <li><a href="#"><img src="/images/category-menu/1.svg" alt=""><span>Институт</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/2.svg" alt=""><span>Образование</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/3.svg" alt=""><span>Наука</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/4.svg" alt=""><span>Международное сотрудничество</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/5.svg" alt=""><span>Институт повышения <br> квалификации и переподготовки</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/6.svg" alt=""><span>Студенческая жизнь</span></a></li>
-                            <li><a href="#"><img src="/images/category-menu/7.svg" alt=""><span>Воспитательная работа</span></a></li>
-                        </ul>
+                        <?= \app\components\MenuWidgetV::widget(['tpl'=>'menu_v'])?>
+<!--                        <ul>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/1.svg" alt=""><span>Институт</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/2.svg" alt=""><span>Образование</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/3.svg" alt=""><span>Наука</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/4.svg" alt=""><span>Международное сотрудничество</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/5.svg" alt=""><span>Институт повышения <br> квалификации и переподготовки</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/6.svg" alt=""><span>Студенческая жизнь</span></a></li>-->
+<!--                            <li><a href="#"><img src="/images/category-menu/7.svg" alt=""><span>Воспитательная работа</span></a></li>-->
+<!--                        </ul>-->
                     </div>
                 </div>
             </div>

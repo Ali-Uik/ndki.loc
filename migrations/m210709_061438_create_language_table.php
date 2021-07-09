@@ -3,20 +3,19 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%articles}}`.
+ * Handles the creation of table `{{%language}}`.
  */
-class m210616_185222_create_articles_table extends Migration
+class m210709_061438_create_language_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%articles}}', [
+        $this->createTable('{{%language}}', [
             'id' => $this->primaryKey(),
-            'cat_id'=>$this->integer(),
             'title'=>$this->text(),
-            'content'=>$this->text(),
+            'name'=>$this->text(),
         ]);
     }
 
@@ -25,6 +24,6 @@ class m210616_185222_create_articles_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%articles}}');
+        $this->dropTable('{{%language}}');
     }
 }
