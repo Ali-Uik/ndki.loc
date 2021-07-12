@@ -4,6 +4,9 @@ jobs:
 
   build:
     name: Push
+    paths-ignore:
+      - '/config/db.php'
+      - 'docker-compose.yml'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
