@@ -1,9 +1,9 @@
-name: scp files
+name: Copy files to remote server via scp
 on: [push]
 jobs:
 
   build:
-    name: Build
+    name: Push
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
