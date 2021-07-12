@@ -1,7 +1,10 @@
 name: Copy files to remote server via scp
 
-on: [push]
-      
+on:
+  push:
+    paths-ignore:
+      - config/db.php
+      - docker-compose.yml
 jobs:
   build:
     name: Push
