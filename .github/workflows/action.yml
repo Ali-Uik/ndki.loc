@@ -16,4 +16,4 @@ jobs:
         key: ${{ secrets.PRIVATEKEY }}
         port: ${{ secrets.PORT }}
         source: "*"
-        target: "/var/docker/ndki/ndki.loc/"
+        target: "ndki/ndki.loc/"
