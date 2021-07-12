@@ -12,7 +12,8 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        password: ${{ secrets.PASSWORD }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        key: ${{ secrets.PRIVATEKEY }}
         port: ${{ secrets.PORT }}
         source: "*"
         target: "/var/www/ndki/ndki.loc/"
