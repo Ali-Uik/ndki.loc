@@ -1,12 +1,12 @@
 name: Copy files to remote server via scp
 on: [push]
+  paths:
+    - '/config/db.php'
+    - 'docker-compose.yml'
 jobs:
 
   build:
     name: Push
-    paths:
-      - '/config/db.php'
-      - 'docker-compose.yml'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
