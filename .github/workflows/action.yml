@@ -1,0 +1,23 @@
+name: Copy files to remote server via scp
+
+on:
+  push:
+    paths-ignore:
+      - config/db.php
+      - docker-compose.yml
+jobs:
+  build:
+    name: Push
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Copy files via scp
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USER }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        key: ${{ secrets.PRIVATEKEY }}
+        port: ${{ secrets.PORT }}
+        source: "*"
+        target: "ndki/ndki.loc/"
